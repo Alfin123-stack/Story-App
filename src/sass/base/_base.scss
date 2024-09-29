@@ -1,0 +1,47 @@
+@use '../abstract/mixins' as mix;
+@use '../abstract/variable' as var;
+
+.img-center-cover{
+    @include mix.cover-center-image;
+    height: var.$height-100;
+}
+
+.container-200{
+    @include mix.container-200;
+}
+
+.margin-y-none-x-auto{
+    @include mix.margin-y-none-x-auto;
+}
+
+.bg-canvas{
+    background-color: var.$secondary-color;
+    li{
+        a{
+            &:hover{
+                color: rgb(117, 112, 112);
+            }
+        }
+    }
+}
+
+.text-primary-white{
+    color: var.$text-primary-color;
+}
+
+.ref-card{
+    height: 400px;
+}
+
+.p-overflow{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    line-clamp: 3; /* For modern browsers */
+}
+
+
+.img-h{
+    height: 200px;
+}

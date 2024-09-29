@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Story App</title>
+  </head>
+  <body>
+    <header>
+      <!-- Awal Navbar -->
+      <navbar-story home="#" add="./stories/add.html" profile="./profile/profile.html" ></navbar-story>
+      <!-- Akhir Navbar -->
+
+      <!-- awal offcanvas -->
+      <canvas-nav home="#" add="./stories/add.html" profile="./profile/profile.html"></canvas-nav>
+      <!-- akhir offcanvas -->
+    </header>
+
+    <!-- Awal Main -->
+     <main class="py-3">
+      <section class="container">
+        <h1>Dashboard</h1>
+        <div class="row" id="container-cardStories">
+        
+        </div>
+      </section>
+     </main>
+     <!-- Akhir Main -->
+  
+     <footer-story></footer-story>
+  </body>
+</html>

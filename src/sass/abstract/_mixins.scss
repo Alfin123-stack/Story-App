@@ -1,0 +1,20 @@
+@mixin cover-center-image {
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin container-200{
+    width:200px;
+    height:200px;
+}
+
+@mixin margin-y-none-x-auto{
+    margin: 0 auto;
+}
+
+@mixin centering-using-flex() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

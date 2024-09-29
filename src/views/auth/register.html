@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+  </head>
+  <body>
+    <main class="min-vh-100 d-flex">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center"><b>Register</b></h2>
+                    <hr>
+                    <form id="registrationForm" class="mt-5 needs-validation" novalidate>
+                        <div class="form-group mb-3 mt-2">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Silakan masukkan nama Anda.</div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Silakan masukkan email yang valid.</div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Kata Sandi</label>
+                            <input type="password" class="form-control" id="password" required>
+                            <div class="invalid-feedback">Kata sandi harus terdiri dari minimal 8 karakter.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Daftar</button>
+                        <div class="mt-4 text-center">
+                            Sudah punya akun? <a href="./login.html">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %> | Add Story</title>
+</head>
+<body>
+  <header>
+    <!-- Awal Navbar -->
+    <navbar-story home="../index.html" add="#" profile="../profile/profile.html"></navbar-story>
+    <!-- Akhir Navbar -->
+
+    <!-- awal offcanvas -->
+    <canvas-nav home="../index.html" add="#" profile="../profile/profile.html"></canvas-nav>
+    <!-- akhir offcanvas -->
+  </header>
+    <main class="py-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <form-story></form-story>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer-story></footer-story>
+</body>
+</html>

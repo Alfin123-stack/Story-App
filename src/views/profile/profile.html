@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %> | Profile </title>
+</head>
+<body>
+    <header>
+      <header>
+        <!-- Awal Navbar -->
+        <navbar-story home="../index.html" add="../stories/add.html" profile="#"></navbar-story>
+        <!-- Akhir Navbar -->
+    
+        <!-- awal offcanvas -->
+        <canvas-nav home="../index.html" add="../stories/add.html" profile="#"></canvas-nav>
+        <!-- akhir offcanvas -->
+      </header>
+
+    <main class="py-3">
+        <div class="container">
+            <section class="profile mt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center text-bg-dark bg-dark p-3">
+                            <div class="card-body">
+                              <h5 class="card-title">Muhammad Alfin Alfarizi</h5>
+                              <p class="text-muted">@mhmdalfinalfrzi</p>
+                              <div class="d-flex justify-content-center align-items-center mb-3 container-200 margin-y-none-x-auto">
+                                <div class="rounded-circle overflow-hidden container-200">
+                                  <img src="https://picsum.photos/1200/700?random=1" class="img-fluid img-center-cover" >
+                                </div>
+                              </div>
+                              <div class="alert alert-secondary" role="alert">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                              </div>
+                              <p class="text-muted">Member since : <b>17 Juny 2024</b></p>
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-md-8">
+                        <form class="text-bg-dark bg-dark p-5 rounded">
+                            <h1>Profile</h1>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="FullName" class="form-label text-muted">Full Name</label>
+                                        <input type="text" class="form-control" id="FullName" value="Muhammad Alfin Alfarizi" disabled>
+                                      </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label text-muted">User Name</label>
+                                        <input type="text" class="form-control" id="username" value="mhmdalfinalfrzi" disabled>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label text-muted">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="alfinkarin789@gmail.com" disabled>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label text-muted">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" disabled value="111111">
+                            </div>
+                            <h5 class="mt-5 mb-3">Social Profile</h5>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!-- Input Group Instagram -->
+                                    <div class="input-group flex-nowrap mb-3">
+                                        <span class="input-group-text" id="addon-instagram">
+                                        <i class="bi bi-instagram"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Instagram Username" aria-label="Instagram Username" aria-describedby="addon-instagram" value="@mhmdalfinalfrzii" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <!-- Input Group LinkedIn -->
+                                    <div class="input-group flex-nowrap">
+                                        <span class="input-group-text" id="addon-linkedin">
+                                        <i class="bi bi-linkedin"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="LinkedIn Username" aria-label="LinkedIn Username" aria-describedby="addon-linkedin" disabled value="Muhammad Alfin Alfarizi">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer-story></footer-story>
+</body>
+</html>
